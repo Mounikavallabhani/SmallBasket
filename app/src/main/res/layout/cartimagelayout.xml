@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/sub_products_counterValuePanel"
+    android:layout_width="40dp"
+    android:layout_height="30dp"
+    android:background="@drawable/add_to_cart">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/counterBackground"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/unread_background" />
+
+        <TextView
+            android:id="@+id/sub_products_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:text=""
+            android:layout_centerInParent="true"
+            android:textColor="#FFFFFF" />
+    </RelativeLayout>
+
+</FrameLayout>

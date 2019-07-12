@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".Activity.LocationActivity">
+
+
+    <include layout="@layout/toolbar_address"
+        android:id="@+id/t1"></include>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--for circles-->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="9">
+            <android.support.v4.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+    <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_margin="5dp"
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_marginLeft="15dp"
+                        android:textColor="@color/black"
+                        android:textSize="18dp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/opensansregular"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Personal Details"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_margin="5dp"
+                    android:weightSum="1"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="0.5"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginEnd="25dp"
+                        >
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/fname"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:hint="Enter First Name"
+                            android:inputType="text"
+                            app:hintTextAppearance="@style/hintsize" />
+                    </android.support.design.widget.TextInputLayout>
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="0.5"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginEnd="25dp"
+                        app:hintTextAppearance="@style/hintsize">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/lname"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:hint="Enter Last Name"
+                            app:hintTextAppearance="@style/hintsize"
+                            android:inputType="text" />
+                    </android.support.design.widget.TextInputLayout>
+
+                </LinearLayout>
+                <android.support.design.widget.TextInputLayout
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginEnd="25dp">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/phone_number"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="Contact number to say hello"
+                        app:hintTextAppearance="@style/hintsize"
+                        android:inputType="text" />
+                </android.support.design.widget.TextInputLayout>
+
+                <LinearLayout
+                    android:layout_margin="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_marginLeft="15dp"
+                        android:textColor="@color/black"
+                        android:textSize="15dp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/opensansregular"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Address Deatails"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_margin="5dp"
+                    android:weightSum="1"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <android.support.design.widget.TextInputLayout
+
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.5"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginEnd="25dp">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/house_no"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:hint="House no "
+                            android:inputType="text"
+                            app:hintTextAppearance="@style/hintsize"
+                            />
+                    </android.support.design.widget.TextInputLayout>
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.5"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginEnd="25dp">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/apartment_no"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:hint="Apartment name"
+                            android:inputType="text"
+                            app:hintTextAppearance="@style/hintsize"
+                            />
+                    </android.support.design.widget.TextInputLayout>
+
+                </LinearLayout>
+                <android.support.design.widget.TextInputLayout
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginEnd="25dp">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/street_no"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="Street details to locate you"
+                        android:inputType="text"
+                        app:hintTextAppearance="@style/hintsize"
+                        />
+                </android.support.design.widget.TextInputLayout>
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginEnd="25dp">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/landmark_no"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="Landmark for easy reach out"
+                        app:hintTextAppearance="@style/hintsize"
+                        android:inputType="text" />
+                </android.support.design.widget.TextInputLayout>
+                <android.support.design.widget.TextInputLayout
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginEnd="25dp">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/area_details"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="Area details"
+                        android:inputType="text"
+                        app:hintTextAppearance="@style/hintsize"
+                        />
+                </android.support.design.widget.TextInputLayout>
+
+                <LinearLayout
+                    android:weightSum="1"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.5"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginEnd="25dp">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/city"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:hint="hyderabad"
+                            app:hintTextAppearance="@style/hintsize"
+
+                            android:inputType="text" />
+                    </android.support.design.widget.TextInputLayout>
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.5"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginEnd="25dp">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/pincode"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:hint="Pincode"
+                            app:hintTextAppearance="@style/hintsize"
+                            android:inputType="text"/>
+                    </android.support.design.widget.TextInputLayout>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_marginLeft="15dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Choose nick name for the address"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_margin="5dp"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+                    <TextView
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="0dp"
+                        android:layout_weight="3"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/location_shape"
+                        android:gravity="center"
+                        android:layout_height="match_parent"
+                        android:text="Home"/>
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_weight="0.3"
+                        android:layout_height="match_parent">
+
+                    </View>
+                    <TextView
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center"
+                        android:background="@drawable/location_shape"
+                        android:layout_width="0dp"
+                        android:layout_margin="5dp"
+                        android:layout_weight="3"
+                        android:layout_height="match_parent"
+                        android:text="Office"/>
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_weight="0.3"
+                        android:layout_height="match_parent">
+
+                    </View>
+                    <TextView
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="0dp"
+                        android:layout_weight="3"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/location_shape"
+                        android:gravity="center"
+                        android:layout_height="match_parent"
+                        android:text="Other"/>
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_weight="0.3"
+                        android:layout_height="match_parent">
+
+                    </View>
+
+                </LinearLayout>
+
+            </LinearLayout>
+                </LinearLayout>
+            </android.support.v4.widget.NestedScrollView>
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+            <Button
+                android:fontFamily="@font/opensansregular"
+                android:layout_alignParentBottom="true"
+                android:id="@+id/save_address"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:background="@color/twittershape"
+                android:text="Save"
+                android:textColor="#fff" />
+
+        </RelativeLayout>
+                </LinearLayout>
+</LinearLayout>

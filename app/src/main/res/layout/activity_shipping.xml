@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.ShippingActivity">
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!--for circles-->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="9">
+                <android.support.v4.widget.NestedScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:focusableInTouchMode="true"
+                android:gravity="center"
+              android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:textColor="@color/white"
+                    android:text="1"
+                    android:id="@+id/round"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/circlewithcolor"/>
+
+
+
+                <View
+                    android:id="@+id/line"
+                    android:layout_width="50dp"
+                    android:layout_height="3dp"
+                    android:layout_gravity="center"
+                    android:background="@color/yellowcolor" />
+                <TextView
+                    android:textColor="@color/white"
+                    android:text="2"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/dark_orange"
+                    android:background="@drawable/circlewithoutcolor"/>
+                <View
+                    android:id="@+id/linepayment"
+                    android:layout_width="50dp"
+                    android:layout_height="3dp"
+                    android:layout_gravity="center"
+                    android:background="@color/dark_orange" />
+                <TextView
+                    android:textColor="@color/white"
+                    android:text="3"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/circlewithoutcolor"/>
+                <View
+                    android:id="@+id/linepayment1"
+                    android:layout_width="50dp"
+                    android:layout_height="3dp"
+                    android:layout_gravity="center"
+                    android:background="#d2d2d2" />
+                <TextView
+                    android:textColor="@color/white"
+                    android:text="4"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/circlewithoutcolor"/>
+            </LinearLayout>
+
+            <!--closed circles-->
+
+
+            <LinearLayout
+
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:fontFamily="@font/opensansregular"
+                    android:layout_margin="10dp"
+                    android:gravity="center"
+                    android:textSize="18dp"
+                    android:textColor="@color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="SHIPPING"/>
+                <View
+                    android:layout_margin="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@color/editextbackground"/>
+                <LinearLayout
+                    android:background="@color/lightcolor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                         android:fontFamily="@font/opensansregular"
+                        android:layout_margin="10dp"
+                        android:gravity="center"
+                        android:textSize="18dp"
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Fill The shipping information"/>
+                </LinearLayout>
+                <View
+                    android:layout_margin="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@color/editextbackground"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/shoipping_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/spinnershape"
+                    android:fontFamily="@font/opensansregular"
+                    android:hint="Name"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="15dp"
+                    android:textSize="15dp" />
+                <EditText
+                    android:id="@+id/shoipping_email"
+                    android:fontFamily="@font/opensansregular"
+                    android:layout_marginTop="10dp"
+                    android:textSize="15dp"
+                    android:paddingTop="15dp"
+                    android:paddingLeft="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/spinnershape"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="Email"/>
+                <EditText
+                    android:id="@+id/shoipping_phone"
+                    android:fontFamily="@font/opensansregular"
+                    android:layout_marginTop="10dp"
+                    android:textSize="15dp"
+                    android:paddingTop="15dp"
+                    android:paddingLeft="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/spinnershape"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="Phone"/>
+                <EditText
+                    android:id="@+id/shoipping_city"
+                    android:fontFamily="@font/opensansregular"
+                    android:layout_marginTop="10dp"
+                    android:textSize="15dp"
+                    android:paddingTop="15dp"
+                    android:paddingLeft="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/spinnershape"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="City"/>
+                <EditText
+                    android:id="@+id/shoipping_state"
+                    android:fontFamily="@font/opensansregular"
+                    android:layout_marginTop="10dp"
+                    android:textSize="15dp"
+                    android:paddingTop="15dp"
+                    android:paddingLeft="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/spinnershape"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="State/Region/province"/>
+                <EditText
+                    android:id="@+id/shoipping_zipcode"
+                    android:fontFamily="@font/opensansregular"
+                    android:layout_marginTop="10dp"
+                    android:textSize="15dp"
+                    android:paddingTop="15dp"
+                    android:paddingLeft="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/spinnershape"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="Zip code"/>
+                <EditText
+                    android:id="@+id/shoipping_address"
+                    android:fontFamily="@font/opensansregular"
+                    android:layout_marginTop="10dp"
+                    android:textSize="15dp"
+                    android:paddingTop="15dp"
+                    android:paddingLeft="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/spinnershape"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="Address"/>
+            </LinearLayout>
+                </LinearLayout>
+                </android.support.v4.widget.NestedScrollView>
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+                      <Button
+                          android:fontFamily="@font/opensansregular"
+                        android:layout_alignParentBottom="true"
+                        android:id="@+id/secondcontinue"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                          android:background="@color/twittershape"
+                        android:text="Continue"
+                        android:textColor="#fff" />
+
+            </RelativeLayout>
+
+
+
+
+
+        </LinearLayout>
+
+
+
+</LinearLayout>

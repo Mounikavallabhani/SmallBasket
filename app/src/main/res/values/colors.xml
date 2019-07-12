@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#DA4242</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="black">#000</color>
+    <color name="white">#ffffff</color>
+    <color name="bluecolor">#3C5569</color>
+    <color name="editextbackground">#E2DADA</color>
+    <color name="buttoncolor">#F85829</color>
+    <color name="yellowcolor">#F9BC3F</color>
+    <color name="lightcolor">#F9F9F9</color>
+    <color name="loginblue">#3A566B</color>
+    <color name="green">#1BB867</color>
+    <color name="facebook">#425E98</color>
+    <color name="twittershape">#61B1EE</color>
+    <color name="register">#EF8742</color>
+    <color name="forbutton">#A74F6F</color>
+    <color name="line1">#E99522</color>
+    <color name="dark_orange">#915608</color>
+    <color name="line2">#FD0678</color>
+    <color name="violet">#8A0B57</color>
+    <color name="line3">#C808F3</color>
+    <color name="blue">#085A94</color>
+    <color name="orange">#FFF39408</color>
+
+    <color name="textcolorPrimary">#0b0b0b</color>
+    <color name="colorControlActivated">#11f2d8</color>
+    <color name="colorControlNotActivated">#88a0f2</color>
+    <color name="jobcatogery">#c0c7cf</color>
+    <color name="jobtitle">#555555</color>
+    <color name="joiningbous">#e3e7ea</color>
+    <color name="companyname">#686767</color>
+    <color name="city">#b3b4b6</color>
+    <color name="salary">#62e4f8</color>
+    <color name="experiance">#92a0ae</color>
+    <color name="fulltime">#fb484a</color>
+    <color name="parttime">#57b22f</color>
+    <color name="block">#FF0F100F</color>
+    <color name="overflowMenuBg">#a6a5a1</color>
+    <color name="yellow">#e9bc0a</color>
+</resources>

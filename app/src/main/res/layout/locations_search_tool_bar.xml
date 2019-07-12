@@ -1,0 +1,36 @@
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/loginblue"
+    android:minHeight="?attr/actionBarSize"
+    app:titleTextAppearance="@style/Toolbar.TitleText"
+    app:theme="@style/MyToolBarTheme"
+    android:id="@+id/producy_items_title"
+    app:popupTheme="@style/MyPopUpTheme">
+
+
+    <LinearLayout
+        android:id="@+id/search_layout"
+        app:layout_scrollFlags="scroll|snap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/toolbar"
+        android:background="@color/loginblue">
+
+        <EditText
+            android:id="@+id/Sub_products_scarch"
+            android:layout_width="0dp"
+            android:layout_weight="0.8"
+            android:layout_height="wrap_content"
+            android:background="@color/loginblue"
+            android:drawableRight="@android:drawable/ic_menu_search"
+            android:gravity="left|center"
+            android:hint="Search for location "
+            android:textColorHint="@android:color/darker_gray" />
+
+
+    </LinearLayout>
+
+</android.support.v7.widget.Toolbar>

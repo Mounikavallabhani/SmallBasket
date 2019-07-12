@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Small Basket</string>
+    <string-array name="SelectArea">
+
+        <item> 1 pcs </item>
+        <item> 2 pcs </item>
+        <item> 3 pcs </item>
+        <item> 4 pcs</item>
+        <item> 5 pcs </item>
+    </string-array>
+    <string name="title_activity_dash_board"></string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string-array name="qundity">
+        <item>QTY</item>
+        <item> 1 pcs </item>
+        <item> 2 pcs </item>
+        <item> 3 pcs </item>
+        <item> 4 pcs</item>
+        <item> 5 pcs </item>
+    </string-array>
+    <string name="title_activity_current_location">Map</string>
+    <string name="title_activity_cureent_location">Map</string>
+
+</resources>

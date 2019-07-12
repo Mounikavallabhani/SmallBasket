@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.ShoppingCart">
+
+
+    <LinearLayout
+        android:weightSum="10"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+         <!--for circles-->
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="9.2">
+            <android.support.v4.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:focusableInTouchMode="true"
+            android:gravity="center"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:fontFamily="@font/opensansregular"
+                android:textColor="@color/white"
+                android:text="1"
+                android:id="@+id/round"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/circlewithcolor"/>
+
+
+
+            <View
+                android:id="@+id/line"
+                android:layout_width="50dp"
+                android:layout_height="3dp"
+                android:layout_gravity="center"
+                android:background="@color/yellowcolor" />
+            <TextView
+                android:textColor="@color/white"
+                android:text="2"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/circlewithoutcolor"/>
+            <View
+                android:id="@+id/linepayment"
+                android:layout_width="50dp"
+                android:layout_height="3dp"
+                android:layout_gravity="center"
+                android:background="#d2d2d2" />
+            <TextView
+                android:textColor="@color/white"
+                android:text="3"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/circlewithoutcolor"/>
+            <View
+                android:id="@+id/linepayment1"
+                android:layout_width="50dp"
+                android:layout_height="3dp"
+                android:layout_gravity="center"
+                android:background="#d2d2d2" />
+            <TextView
+                android:textColor="@color/white"
+                android:text="4"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/circlewithoutcolor"/>
+        </LinearLayout>
+
+        <!--closed circles-->
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:fontFamily="@font/opensansregular"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SHOPPING CART"/>
+            <View
+                android:layout_margin="5dp"
+                 android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="15dp"
+                android:background="@color/editextbackground"/>
+            <LinearLayout
+                android:background="@color/lightcolor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/selected_items_list"
+                android:fontFamily="@font/opensansregular"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""/>
+            </LinearLayout>
+            <View
+                 android:layout_margin="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="15dp"
+                android:background="@color/editextbackground"/>
+
+
+
+        </LinearLayout>
+
+      <!--  <LinearLayout
+            android:layout_marginLeft="30dp"
+
+            android:weightSum="3"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:fontFamily="@font/opensansregular"
+                android:textSize="15dp"
+                android:gravity="right"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Name"/>
+            <TextView
+                android:fontFamily="@font/opensansregular"
+                android:textSize="15dp"
+                android:gravity="right"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Quantity"/>
+            <TextView
+                android:fontFamily="@font/opensansregular"
+                android:textSize="15dp"
+                android:gravity="right"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Total Price"/>
+
+
+        </LinearLayout>-->
+      <!--  <View
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="15dp"
+            android:background="@color/editextbackground"/>-->
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/shoppingcart"
+            android:layout_marginTop="3dp"
+             android:nestedScrollingEnabled="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </android.support.v7.widget.RecyclerView>
+      <!--  <LinearLayout
+            android:layout_margin="10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:fontFamily="@font/opensansregular"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Continue Shopping"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <TextView
+                android:fontFamily="@font/opensansregular"
+                android:layout_marginRight="20dp"
+                android:textSize="14dp"
+                android:textColor="@color/black"
+                android:layout_toLeftOf="@+id/rs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sub Total:"/>
+            <TextView
+               android:fontFamily="@font/opensansregular"
+                android:id="@+id/rs"
+                android:layout_marginRight="10dp"
+                android:textSize="14dp"
+                android:textColor="@color/black"
+                android:layout_toLeftOf="@+id/cost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="RS"/>
+            <TextView
+                android:fontFamily="@font/opensansregular"
+                android:id="@+id/cost"
+                android:textSize="14dp"
+                android:textColor="@color/black"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="345.00"/>
+            </RelativeLayout>
+
+
+        </LinearLayout>-->
+
+
+
+
+
+
+
+
+
+
+            </LinearLayout>
+            </android.support.v4.widget.NestedScrollView>
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+        <RelativeLayout
+            android:layout_weight="0.8"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+            <LinearLayout
+                android:background="@color/twittershape"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_marginLeft="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="@font/opensansbold"
+                    android:textSize="18dp"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Rs"/>
+                    <TextView
+                        android:id="@+id/finalamount"
+                        android:layout_marginLeft="10dp"
+                        android:fontFamily="@font/opensansbold"
+                        android:textSize="18dp"
+                        android:textColor="@color/white"
+                        android:gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="345"/>
+                </LinearLayout>
+                <LinearLayout
+                  android:layout_margin="5dp"
+                    android:gravity="right|center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                 <Button
+                     android:id="@+id/continuebutton"
+                     android:layout_width="120dp"
+                     android:layout_height="38dp"
+                     android:layout_gravity="center"
+                     android:textAllCaps="false"
+                     android:background="@drawable/cartshape"
+                     android:text="Checkout"
+                     android:textColor="#fff" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+           <!-- <Button
+                android:id="@+id/continuebutton"
+                android:layout_alignParentBottom="true"
+
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:background="@color/twittershape"
+                android:text="Continue"
+                android:textColor="#fff" />
+-->
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

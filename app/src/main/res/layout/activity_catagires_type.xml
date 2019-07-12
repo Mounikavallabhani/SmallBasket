@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.CatagiresType">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/heading_main"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_margin="40dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:layout_gravity="center"
+                android:src="@drawable/logo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </LinearLayout>
+        <LinearLayout
+              android:background="@drawable/bg"
+            android:layout_marginBottom="100dp"
+              android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_margin="15dp"
+            android:gravity="center"
+            android:weightSum="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/catagirestype"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </android.support.v7.widget.RecyclerView>
+       <!-- <LinearLayout
+            android:id="@+id/food"
+            android:layout_margin="10dp"
+            android:background="@drawable/typebackgroundshape"
+            android:layout_weight="0.5"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_gravity="center"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/groceries"/>
+            <TextView
+                android:fontFamily="@font/opensansregular"
+                android:textColor="@color/black"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Food"/>
+        </LinearLayout>-->
+
+           <!-- <LinearLayout
+                android:id="@+id/groceries"
+                android:layout_margin="10dp"
+                 android:background="@drawable/typebackgroundshape"
+                android:layout_weight="0.5"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_gravity="center"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/groceries"/>
+                <TextView
+                    android:fontFamily="@font/opensansregular"
+                    android:textColor="@color/black"
+                    android:layout_margin="5dp"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Groceries"/>
+            </LinearLayout>-->
+
+
+
+        </LinearLayout>
+
+
+
+            <!-- <Button
+                 android:fontFamily="@font/opensansregular"
+                 android:id="@+id/select"
+                 android:textAllCaps="true"
+                 android:textColor="@color/white"
+                 android:background="@color/bluecolor"
+                 android:text="Select"
+                 android:layout_margin="15dp"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content" />-->
+
+
+        </LinearLayout>
+
+
+
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:weightSum="4"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="100dp">
+        <ImageView
+            android:id="@+id/shoppingimage"
+            android:src="@drawable/dammy"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+        <TextView
+            android:textSize="15dp"
+            android:fontFamily="@font/opensansregular"
+            android:textColor="@color/black"
+            android:id="@+id/shoppingname"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="fresh apple"/>
+        </LinearLayout>
+        <LinearLayout
+
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:textSize="15dp"
+                android:fontFamily="@font/opensansregular"
+                android:textColor="@color/black"
+                android:id="@+id/shoppingquantity"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:background="@drawable/spinnershape"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text=" 1"/>
+        </LinearLayout>
+        <LinearLayout
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+        <TextView
+            android:fontFamily="@font/opensansregular"
+            android:id="@+id/rs"
+            android:layout_marginRight="10dp"
+            android:textSize="15dp"
+            android:textColor="@color/black"
+            android:layout_toLeftOf="@+id/cost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RS"/>
+        <TextView
+            android:fontFamily="@font/opensansregular"
+            android:id="@+id/shoppingcost"
+            android:textSize="15dp"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="345.00"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/editextbackground"/>
+    </LinearLayout>
+
+
+
+</LinearLayout>

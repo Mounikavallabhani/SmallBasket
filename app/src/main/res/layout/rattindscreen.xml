@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_margin="10dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textSize="14dp"
+                    android:fontFamily="@font/opensansbold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rate your food"/>
+                <TextView
+                    android:textSize="14dp"
+                    android:fontFamily="@font/opensansbold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="-"/>
+                <TextView
+                    android:textSize="14dp"
+                    android:fontFamily="@font/opensansbold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Vasista Sri Lakshmi"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RatingBar
+                    android:id="@+id/restarentratting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:numStars="5"
+                    android:isIndicator="false"
+                    style="@style/foodRatingBar"
+                   />
+            </LinearLayout>
+            <View
+                android:layout_margin="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/editextbackground"/>
+            <LinearLayout
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/content"
+                    android:textSize="12dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="WHAT DISAPPOINTED YOU ?"/>
+            </LinearLayout>
+            <LinearLayout
+                android:weightSum="1"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:fontFamily="@font/opensansregular"
+                    android:drawableRight="@drawable/ic_check_black_24dp"
+                   android:padding="5dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/spinnershape"
+                    android:textSize="12dp"
+                    android:text="Taste"
+                    android:layout_weight="0.5"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"/>
+                <TextView
+                    android:fontFamily="@font/opensansregular"
+                    android:drawableRight="@drawable/ic_check_black_24dp"
+                    android:padding="5dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/spinnershape"
+                    android:textSize="12dp"
+                    android:text="Portion Size"
+                    android:layout_weight="0.5"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:weightSum="1"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:fontFamily="@font/opensansregular"
+                    android:drawableRight="@drawable/ic_check_black_24dp"
+                    android:padding="5dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/spinnershape"
+                    android:textSize="12dp"
+                    android:text="Food Packaging"
+                    android:layout_weight="0.5"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"/>
+                <TextView
+                    android:id="@+id/fourcontent"
+
+                    android:fontFamily="@font/opensansregular"
+                    android:drawableRight="@drawable/ic_check_black_24dp"
+                    android:padding="5dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/spinnershape"
+                    android:textSize="12dp"
+                    android:text="Wrong or Missing item"
+                    android:layout_weight="0.5"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"/>
+            </LinearLayout>
+            <View
+                android:layout_margin="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/black"/>
+            <LinearLayout
+                android:layout_margin="10dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textSize="14dp"
+                    android:fontFamily="@font/opensansbold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rate delivery by"/>
+
+                <TextView
+                    android:layout_marginLeft="2dp"
+                    android:textSize="14dp"
+                    android:fontFamily="@font/opensansbold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="R Srikanth "/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RatingBar
+                    android:id="@+id/deliveryboyratting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:numStars="5"
+                    android:isIndicator="false"
+                    style="@style/foodRatingBar"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/linerlayout"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_margin="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/content1"
+                        android:textSize="12dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="WHAT DISAPPOINTED YOU ?"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:weightSum="1"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:fontFamily="@font/opensansregular"
+                        android:drawableRight="@drawable/ic_check_black_24dp"
+                        android:padding="5dp"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/spinnershape"
+                        android:textSize="12dp"
+                        android:text="Taste"
+                        android:layout_weight="0.5"
+                        android:layout_width="0dp"
+                        android:layout_height="35dp"/>
+                    <TextView
+                        android:fontFamily="@font/opensansregular"
+                        android:drawableRight="@drawable/ic_check_black_24dp"
+                        android:padding="5dp"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/spinnershape"
+                        android:textSize="12dp"
+                        android:text="Portion Size"
+                        android:layout_weight="0.5"
+                        android:layout_width="0dp"
+                        android:layout_height="35dp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:weightSum="1"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:fontFamily="@font/opensansregular"
+                        android:drawableRight="@drawable/ic_check_black_24dp"
+                        android:padding="5dp"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/spinnershape"
+                        android:textSize="12dp"
+                        android:text="Food Packaging"
+                        android:layout_weight="0.5"
+                        android:layout_width="0dp"
+                        android:layout_height="35dp"/>
+                    <TextView
+                        android:id="@+id/fourcontent1"
+
+                        android:fontFamily="@font/opensansregular"
+                        android:drawableRight="@drawable/ic_check_black_24dp"
+                        android:padding="5dp"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/spinnershape"
+                        android:textSize="12dp"
+                        android:text="Wrong or Missing item"
+                        android:layout_weight="0.5"
+                        android:layout_width="0dp"
+                        android:layout_height="35dp"/>
+                </LinearLayout>
+
+            </LinearLayout>
+            <View
+                android:layout_margin="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/black"/>
+            <EditText
+                android:textSize="14dp"
+                android:fontFamily="@font/opensansregular"
+                android:hint="Got any other suggestions ? Let us know"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <Button
+
+                android:fontFamily="@font/opensansregular"
+                android:textColor="@color/white"
+                android:layout_margin="15dp"
+                android:background="@color/orange"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Enter food rating"/>
+
+
+
+
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>
